@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C67D615E-83D8-46F6-98E5-7A8918D5676A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CC.My.MyApplication</StartupObject>
+    <RootNamespace>CC</RootNamespace>
+    <AssemblyName>CC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsignadorPC.Designer.vb">
+      <DependentUpon>AsignadorPC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignadorPC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup.Designer.vb">
+      <DependentUpon>Backup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Backup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitacora.Designer.vb">
+      <DependentUpon>Bitacora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bitacora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja.Designer.vb">
+      <DependentUpon>Caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioContraseña.Designer.vb">
+      <DependentUpon>CambioContraseña.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambioContraseña.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CerrarSesion.Designer.vb">
+      <DependentUpon>CerrarSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CerrarSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.vb">
+      <DependentUpon>Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abonos.Designer.vb">
+      <DependentUpon>Abonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Abonos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Context.vb" />
+    <Compile Include="CustomComboBox.designer.vb">
+      <DependentUpon>CustomComboBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomComboBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DV.Designer.vb">
+      <DependentUpon>DV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteFicha.Designer.vb">
+      <DependentUpon>ClienteFicha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteFicha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarProducto.Designer.vb">
+      <DependentUpon>EditarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarUsuario.Designer.vb">
+      <DependentUpon>EditarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizadorProducto.Designer.vb">
+      <DependentUpon>ActualizadorProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizadorProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Familia.Designer.vb">
+      <DependentUpon>Familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Familia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FamiliaFicha.Designer.vb">
+      <DependentUpon>FamiliaFicha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FamiliaFicha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoCliente.Designer.vb">
+      <DependentUpon>NuevoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoProducto.Designer.vb">
+      <DependentUpon>NuevoProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenDeTrabajo.Designer.vb">
+      <DependentUpon>OrdenDeTrabajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenDeTrabajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBase.Designer.vb">
+      <DependentUpon>FormBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI_CC.Designer.vb">
+      <DependentUpon>MDI_CC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI_CC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RandomPassword.vb" />
+    <Compile Include="Restore.Designer.vb">
+      <DependentUpon>Restore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Restore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RprtAbono.Designer.vb">
+      <DependentUpon>RprtAbono.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RprtAbono.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RprtCaja.Designer.vb">
+      <DependentUpon>RprtCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RprtCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RprtClientes.Designer.vb">
+      <DependentUpon>RprtClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RprtClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RprtOrdenTrabajo.Designer.vb">
+      <DependentUpon>RprtOrdenTrabajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RprtOrdenTrabajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RprtProductos.Designer.vb">
+      <DependentUpon>RprtProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RprtProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectControl.Designer.vb">
+      <DependentUpon>SelectControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TelefonoFicha.Designer.vb">
+      <DependentUpon>TelefonoFicha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TelefonoFicha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario.Designer.vb">
+      <DependentUpon>Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioFicha.Designer.vb">
+      <DependentUpon>UsuarioFicha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioFicha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario_Familia.Designer.vb">
+      <DependentUpon>Usuario_Familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario_Familia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Abonos.en-US.resx">
+      <DependentUpon>Abonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abonos.es-AR.resx">
+      <DependentUpon>Abonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abonos.resx">
+      <DependentUpon>Abonos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizadorProducto.en-US.resx">
+      <DependentUpon>ActualizadorProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignadorPC.en-US.resx">
+      <DependentUpon>AsignadorPC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignadorPC.es-AR.resx">
+      <DependentUpon>AsignadorPC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignadorPC.resx">
+      <DependentUpon>AsignadorPC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignadorPC.xh-ZA.resx">
+      <DependentUpon>AsignadorPC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup.en-US.resx">
+      <DependentUpon>Backup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup.resx">
+      <DependentUpon>Backup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora.en-US.resx">
+      <DependentUpon>Bitacora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora.es-AR.resx">
+      <DependentUpon>Bitacora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora.resx">
+      <DependentUpon>Bitacora.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja.en-US.resx">
+      <DependentUpon>Caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja.es-AR.resx">
+      <DependentUpon>Caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja.resx">
+      <DependentUpon>Caja.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioContraseña.en-US.resx">
+      <DependentUpon>CambioContraseña.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioContraseña.es-AR.resx">
+      <DependentUpon>CambioContraseña.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioContraseña.resx">
+      <DependentUpon>CambioContraseña.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CerrarSesion.en-US.resx">
+      <DependentUpon>CerrarSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CerrarSesion.es-AR.resx">
+      <DependentUpon>CerrarSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CerrarSesion.resx">
+      <DependentUpon>CerrarSesion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.en-US.resx">
+      <DependentUpon>Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomComboBox.resx">
+      <DependentUpon>CustomComboBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DV.resx">
+      <DependentUpon>DV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteFicha.en-US.resx">
+      <DependentUpon>ClienteFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteFicha.resx">
+      <DependentUpon>ClienteFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarProducto.en-US.resx">
+      <DependentUpon>EditarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarProducto.es-AR.resx">
+      <DependentUpon>EditarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarProducto.resx">
+      <DependentUpon>EditarProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarUsuario.en-US.resx">
+      <DependentUpon>EditarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarUsuario.es-AR.resx">
+      <DependentUpon>EditarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarUsuario.resx">
+      <DependentUpon>EditarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizadorProducto.resx">
+      <DependentUpon>ActualizadorProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Familia.en-US.resx">
+      <DependentUpon>Familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Familia.en.resx">
+      <DependentUpon>Familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Familia.es-AR.resx">
+      <DependentUpon>Familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Familia.resx">
+      <DependentUpon>Familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamiliaFicha.en-US.resx">
+      <DependentUpon>FamiliaFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamiliaFicha.en.resx">
+      <DependentUpon>FamiliaFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamiliaFicha.es-AR.resx">
+      <DependentUpon>FamiliaFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamiliaFicha.resx">
+      <DependentUpon>FamiliaFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.en-US.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.es-AR.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_CC.en-US.resx">
+      <DependentUpon>MDI_CC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_CC.es-AR.resx">
+      <DependentUpon>MDI_CC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoCliente.en-US.resx">
+      <DependentUpon>NuevoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoCliente.es-AR.resx">
+      <DependentUpon>NuevoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoCliente.resx">
+      <DependentUpon>NuevoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoProducto.en-US.resx">
+      <DependentUpon>NuevoProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoProducto.es-AR.resx">
+      <DependentUpon>NuevoProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoProducto.resx">
+      <DependentUpon>NuevoProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenDeTrabajo.en-US.resx">
+      <DependentUpon>OrdenDeTrabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenDeTrabajo.resx">
+      <DependentUpon>OrdenDeTrabajo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBase.resx">
+      <DependentUpon>FormBase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_CC.resx">
+      <DependentUpon>MDI_CC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restore.en-US.resx">
+      <DependentUpon>Restore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restore.resx">
+      <DependentUpon>Restore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtAbono.en-US.resx">
+      <DependentUpon>RprtAbono.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtAbono.es-AR.resx">
+      <DependentUpon>RprtAbono.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtAbono.resx">
+      <DependentUpon>RprtAbono.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtCaja.en-US.resx">
+      <DependentUpon>RprtCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtCaja.es-AR.resx">
+      <DependentUpon>RprtCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtCaja.resx">
+      <DependentUpon>RprtCaja.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtClientes.es-AR.resx">
+      <DependentUpon>RprtClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtClientes.resx">
+      <DependentUpon>RprtClientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtOrdenTrabajo.en-US.resx">
+      <DependentUpon>RprtOrdenTrabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtOrdenTrabajo.es-AR.resx">
+      <DependentUpon>RprtOrdenTrabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtOrdenTrabajo.resx">
+      <DependentUpon>RprtOrdenTrabajo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtProductos.en-US.resx">
+      <DependentUpon>RprtProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtProductos.es-AR.resx">
+      <DependentUpon>RprtProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RprtProductos.resx">
+      <DependentUpon>RprtProductos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectControl.resx">
+      <DependentUpon>SelectControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelefonoFicha.resx">
+      <DependentUpon>TelefonoFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario.en-US.resx">
+      <DependentUpon>Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario.en.resx">
+      <DependentUpon>Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario.es-AR.resx">
+      <DependentUpon>Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario.resx">
+      <DependentUpon>Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioFicha.en-US.resx">
+      <DependentUpon>UsuarioFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioFicha.en.resx">
+      <DependentUpon>UsuarioFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioFicha.es-AR.resx">
+      <DependentUpon>UsuarioFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioFicha.resx">
+      <DependentUpon>UsuarioFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario_Familia.en-US.resx">
+      <DependentUpon>Usuario_Familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario_Familia.es-AR.resx">
+      <DependentUpon>Usuario_Familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario_Familia.resx">
+      <DependentUpon>Usuario_Familia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CC_BLL\CC_BLL.vbproj">
+      <Project>{BD669575-13EB-445B-A92A-A98BE359BC4C}</Project>
+      <Name>CC_BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyoffline.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CYONLINE.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\CYERROR.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
