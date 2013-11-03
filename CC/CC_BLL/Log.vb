@@ -121,7 +121,7 @@ Public Class Log
     Public Function GetDataByUsuario(ByVal idUsuario As Long, ByVal fechaDesde As Date, ByVal fechaHasta As Date, Optional ByVal validate As Boolean = True) As DataTable
         Dim dt As DataTable = Adapter.GetDataByUsuarioFecha(idUsuario, fechaDesde, fechaHasta)
         If validate Then
-            ValidateData_e(dt)
+            'ValidateData_e(dt)
             unencryptDataTable(dt)
         End If
         Return dt

@@ -17,7 +17,7 @@ Public Class Bitacora
     Private Sub CargarComboUsuarios()
         cmbUsuario.DisplayMember = "usuario"
         cmbUsuario.ValueMember = "id_usuario"
-        cmbUsuario.setGetDataFunction(AddressOf _Usuario.GetDataFiltered)
+        cmbUsuario.setGetDataFunction(AddressOf _Usuario.GetDataParaCombo)
     End Sub
 
     Private Sub btnMostrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMostrar.Click
