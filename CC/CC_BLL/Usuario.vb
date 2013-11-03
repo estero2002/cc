@@ -37,7 +37,7 @@ Public Class Usuario
         Dim dt As CC_DAL.CC_DB.usuarioDataTable
         Dim row As DataRow
         ape = Encriptor.ShiftK(ape, 1)
-        dt = Adapter.GetDataByApeNom(ape)
+        dt = Adapter.GetDataByApeNom(ape, ape)
         'dt.Columns.Add("clienteDisplay")
         Dim col As New DataColumn
         col.ColumnName = "usuario"
