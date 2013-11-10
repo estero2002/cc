@@ -400,14 +400,14 @@ Namespace CC_DBTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)> _
-         Public Overridable Overloads Function Insert(ByRef id As Long, ByVal id_family As Global.System.Nullable(Of Integer), ByVal id_usuario As Global.System.Nullable(Of Integer), ByVal strval As String) As Integer
+        Public Overridable Overloads Function Insert(ByRef id As Long, ByVal id_family As Global.System.Nullable(Of Long), ByVal id_usuario As Global.System.Nullable(Of Long), ByVal strval As String) As Integer
             If (id_family.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(id_family.Value, Integer)
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(id_family.Value, Long)
             Else
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             End If
             If (id_usuario.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(id_usuario.Value, Integer)
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(id_usuario.Value, Long)
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             End If

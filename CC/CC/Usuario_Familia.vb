@@ -43,6 +43,7 @@ Public Class Usuario_Familia
         cmbUsuario.DisplayMember = "usuario"
         cmbUsuario.ValueMember = "id_usuario"
         cmbUsuario.setGetDataFunction(AddressOf _usuario.GetDataParaCombo)
+        cmbUsuario.ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
         SetSelectControlLabels()
 
     End Sub
