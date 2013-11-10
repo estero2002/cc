@@ -33,50 +33,78 @@ Partial Class Usuario_Familia
         '
         'Label1
         '
+        Me.Label1.AccessibleDescription = Nothing
+        Me.Label1.AccessibleName = Nothing
         resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Font = Nothing
         Me.Label1.Name = "Label1"
         '
         'btnAsignar
         '
+        Me.btnAsignar.AccessibleDescription = Nothing
+        Me.btnAsignar.AccessibleName = Nothing
         resources.ApplyResources(Me.btnAsignar, "btnAsignar")
+        Me.btnAsignar.BackgroundImage = Nothing
+        Me.btnAsignar.Font = Nothing
         Me.btnAsignar.Name = "btnAsignar"
         Me.btnAsignar.UseVisualStyleBackColor = True
         '
         'btnSalir
         '
+        Me.btnSalir.AccessibleDescription = Nothing
+        Me.btnSalir.AccessibleName = Nothing
         resources.ApplyResources(Me.btnSalir, "btnSalir")
+        Me.btnSalir.BackgroundImage = Nothing
+        Me.btnSalir.Font = Nothing
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.UseVisualStyleBackColor = True
         '
         'cmbUsuario
         '
-        Me.cmbUsuario.DisplayMember = Nothing
+        Me.cmbUsuario.AccessibleDescription = Nothing
+        Me.cmbUsuario.AccessibleName = Nothing
         resources.ApplyResources(Me.cmbUsuario, "cmbUsuario")
+        Me.cmbUsuario.BackgroundImage = Nothing
+        Me.cmbUsuario.DisplayMember = Nothing
+        Me.cmbUsuario.Font = Nothing
         Me.cmbUsuario.Name = "cmbUsuario"
         Me.cmbUsuario.TableAdapter = Nothing
         Me.cmbUsuario.ValueMember = Nothing
         '
         'SelectControl1
         '
+        Me.SelectControl1.AccessibleDescription = Nothing
+        Me.SelectControl1.AccessibleName = Nothing
         resources.ApplyResources(Me.SelectControl1, "SelectControl1")
+        Me.SelectControl1.BackgroundImage = Nothing
+        Me.SelectControl1.Font = Nothing
         Me.SelectControl1.Name = "SelectControl1"
         '
         'btnSearch
         '
+        Me.btnSearch.AccessibleDescription = Nothing
+        Me.btnSearch.AccessibleName = Nothing
         resources.ApplyResources(Me.btnSearch, "btnSearch")
+        Me.btnSearch.BackgroundImage = Nothing
+        Me.btnSearch.Font = Nothing
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
         'Usuario_Familia
         '
+        Me.AccessibleDescription = Nothing
+        Me.AccessibleName = Nothing
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.SelectControl1)
         Me.Controls.Add(Me.cmbUsuario)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnAsignar)
         Me.Controls.Add(Me.Label1)
+        Me.Font = Nothing
+        Me.Icon = Nothing
         Me.Name = "Usuario_Familia"
         Me.ResumeLayout(False)
         Me.PerformLayout()

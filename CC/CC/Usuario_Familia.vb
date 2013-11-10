@@ -42,7 +42,7 @@ Public Class Usuario_Familia
         _usuarioFamilias = _factoryUsuarioFamilias.GetUsuarioFamilias()
         cmbUsuario.DisplayMember = "usuario"
         cmbUsuario.ValueMember = "id_usuario"
-        cmbUsuario.setGetDataFunction(AddressOf _usuario.GetDataFiltered)
+        cmbUsuario.setGetDataFunction(AddressOf _usuario.GetDataParaCombo)
         SetSelectControlLabels()
 
     End Sub
