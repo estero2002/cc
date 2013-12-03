@@ -42,7 +42,7 @@ Public Class ActualizadorProducto
             Grid.Columns("strval").Visible = False 'los campos que no queremos ver los ponemos en invisible
 
             Grid.Columns("Descripcion").HeaderText = "Producto" 'los campos que quermos ver, agregar nombre del campo, ancho y alineacion
-            Grid.Columns("Descripcion").Width = 150
+            Grid.Columns("Descripcion").Width = 200
             Grid.Columns("Descripcion").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
             Grid.Columns("Descripcion").ReadOnly = True
 

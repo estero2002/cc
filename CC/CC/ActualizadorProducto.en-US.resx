@@ -124,16 +124,16 @@
   <data name="Label1.Text" xml:space="preserve">
     <value>Product Type</value>
   </data>
-  <data name="Button1.Text" xml:space="preserve">
-    <value>New Product</value>
+  <data name="btnNuevo.Text" xml:space="preserve">
+    <value>New</value>
   </data>
-  <data name="Button2.Text" xml:space="preserve">
-    <value>Edit Product</value>
+  <data name="btnEditar.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
-  <data name="Button3.Text" xml:space="preserve">
-    <value>Remove Product</value>
+  <data name="btnEliminar.Text" xml:space="preserve">
+    <value>Delete</value>
   </data>
-  <data name="Button4.Text" xml:space="preserve">
+  <data name="btnsalir.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
   <data name="$this.Text" xml:space="preserve">

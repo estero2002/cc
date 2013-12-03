@@ -211,7 +211,7 @@ Namespace CC_DBTableAdapters
 
     End Class
     Partial Public Class ProductoTableAdapter
-        Public Overridable Overloads Function Insert(ByRef id As Long, ByVal descripcion As String, ByVal precio As Global.System.Nullable(Of Decimal), ByVal tipo_producto As Global.System.Nullable(Of Integer), ByVal strval As Global.System.Nullable(Of Integer)) As Integer
+        Public Overridable Overloads Function Insert(ByRef id As Long, ByVal descripcion As String, ByVal precio As Global.System.Nullable(Of Decimal), ByVal tipo_producto As Global.System.Nullable(Of Long), ByVal strval As Global.System.Nullable(Of Long)) As Integer
             If (descripcion Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
@@ -223,12 +223,12 @@ Namespace CC_DBTableAdapters
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             End If
             If (tipo_producto.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(tipo_producto.Value, Integer)
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(tipo_producto.Value, Long)
             Else
                 Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
             End If
             If (strval.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(3).Value = CType(strval.Value, Integer)
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(strval.Value, Long)
             Else
                 Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
             End If
@@ -253,8 +253,6 @@ Namespace CC_DBTableAdapters
                 End If
             End Try
         End Function
-
-
     End Class
 
     Partial Public Class PCTableAdapter

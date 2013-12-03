@@ -299,6 +299,9 @@
     <EmbeddedResource Include="ActualizadorProducto.en-US.resx">
       <DependentUpon>ActualizadorProducto.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ActualizadorProducto.es-AR.resx">
+      <DependentUpon>ActualizadorProducto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AsignadorPC.en-US.resx">
       <DependentUpon>AsignadorPC.vb</DependentUpon>
     </EmbeddedResource>

@@ -23,7 +23,7 @@ Public Class Producto
 
     Public Function GetData() As DataTable
         Dim dt As DataTable = Adapter.GetData()
-        ValidateData_e(dt)
+        'ValidateData_e(dt)
         unencryptDataTable(dt)
         Log.Record("Producto.GetData", _idUsuarioActual, "")
         Return dt
