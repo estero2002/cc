@@ -42,7 +42,7 @@ Public Class AsignadorPC
             Dim _c As Cliente = _factory.GetCliente()
             cmbCliente.DisplayMember = "cliente"
             cmbCliente.ValueMember = "id_cliente"
-            cmbCliente.setGetDataFunction(AddressOf _c.GetDataFiltered)
+            cmbCliente.setGetDataFunction(AddressOf _c.GetDataParaCombo)
 
             EnableControlsForAssignation(True)
         End If
@@ -133,7 +133,7 @@ Public Class AsignadorPC
         DataGridView1.Columns("fecha").HeaderText = "Fecha"
         DataGridView1.Columns("fecha").DisplayIndex = 2
         DataGridView1.Columns("id_cliente").Visible = False
-        DataGridView1.Columns("id_tarifa").Visible = False
+        'DataGridView1.Columns("id_tarifa").Visible = False
         DataGridView1.Columns("horaInicio").HeaderText = "Inicio"
         DataGridView1.Columns("horaInicio").DisplayIndex = 4
         DataGridView1.Columns("id_usuario").Visible = False
