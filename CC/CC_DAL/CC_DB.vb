@@ -166,16 +166,14 @@ Namespace CC_DBTableAdapters
 
     End Class
     Partial Public Class telefonoTableAdapter
-       
-        Public Overridable Overloads Function Insert(ByRef id As Long, ByVal id_usuario As Global.System.Nullable(Of Integer), ByVal id_tipo_num As Global.System.Nullable(Of Integer), ByVal numero As String, ByVal strval As Global.System.Nullable(Of Integer)) As Integer
-            id = 0
+        Public Overridable Overloads Function Insert(ByRef id As Long, ByVal id_usuario As Global.System.Nullable(Of Long), ByVal id_tipo_num As Global.System.Nullable(Of Long), ByVal numero As String, ByVal strval As Global.System.Nullable(Of Long)) As Integer
             If (id_usuario.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(id_usuario.Value, Integer)
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(id_usuario.Value, Long)
             Else
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             End If
             If (id_tipo_num.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(id_tipo_num.Value, Integer)
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(id_tipo_num.Value, Long)
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             End If
@@ -185,7 +183,7 @@ Namespace CC_DBTableAdapters
                 Me.Adapter.InsertCommand.Parameters(2).Value = CType(numero, String)
             End If
             If (strval.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(3).Value = CType(strval.Value, Integer)
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(strval.Value, Long)
             Else
                 Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
             End If
@@ -209,7 +207,6 @@ Namespace CC_DBTableAdapters
                     Me.Adapter.InsertCommand.Connection.Close()
                 End If
             End Try
-
         End Function
 
     End Class
