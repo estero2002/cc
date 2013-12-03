@@ -4,7 +4,6 @@ Public Class ActualizadorProducto
     Private _prod As Producto
     Dim _tipoproducto As Tipoproducto
 
-
     Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
         Dim f As New EditarProducto()
         f.ShowDialog()
@@ -68,15 +67,9 @@ Public Class ActualizadorProducto
 
     End Sub
 
-
     Private Sub btnsalir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnsalir.Click
         Me.Close()
     End Sub
-
-    Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles Grid.CellContentClick
-
-    End Sub
-
     
     Private Sub btnEliminar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
         If Not Grid.CurrentRow Is Nothing Then
@@ -93,9 +86,6 @@ Public Class ActualizadorProducto
         End If
     End Sub
 
-    Private Sub cmbProd_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbProd.SelectedValueChanged
-
-    End Sub
     Private Sub cargarCombos()
         Dim prod As DataTable = _tipoproducto.GetData()
         cmbProd.DataSource = prod

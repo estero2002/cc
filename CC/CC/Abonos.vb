@@ -77,7 +77,7 @@ Public Class Abonos
     Private Sub CargarComboClientes()
         cmbCliente.DisplayMember = "cliente"
         cmbCliente.ValueMember = "id_cliente"
-        cmbCliente.setGetDataFunction(AddressOf _Cliente.GetDataFiltered)
+        cmbCliente.setGetDataFunction(AddressOf _Cliente.GetDataParaCombo)
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click

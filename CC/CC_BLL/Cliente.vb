@@ -45,6 +45,22 @@ Public Class Cliente
         Return dt
     End Function
 
+    Public Function GetDataParaCombo() As DataTable
+        Dim dt As CC_DAL.CC_DB.clienteDataTable
+        Dim row As DataRow
+        dt = Adapter.GetData()
+
+        Dim col As New DataColumn
+        col.ColumnName = "cliente"
+        dt.Columns.Add(col)
+        For Each row In dt.Rows
+            row("cliente") = Encriptor.ShiftK(row("apellido"), -1) + ", " + Encriptor.ShiftK(row("nombre"), -1)
+        Next
+
+        Log.Record("Cliente.GetDataParaCombo", _idUsuarioActual, "")
+        Return dt
+    End Function
+
     Public Function GetDataConAbono() As DataTable
         Dim dt As DataTable = Adapter.GetDataConAbono()
         'ValidateData_e(dt)
