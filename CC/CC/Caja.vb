@@ -147,7 +147,7 @@ Public Class caja
                 lblTicket.Text = compraActual.IdCompra
                 lblFecha.Text = compraActual.Fecha.ToString("d")
 
-                Dim dtClientes As DataTable = _Cliente.GetDataFiltered("")
+                Dim dtClientes As DataTable = _Cliente.GetDataParaCombo()
                 cmbCliente.DataSource = dtClientes
                 cmbCliente.DisplayMember = "cliente"
                 cmbCliente.ValueMember = "id_cliente"
