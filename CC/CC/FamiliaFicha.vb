@@ -20,6 +20,11 @@ Public Class FamiliaFicha
     Private Sub cmdAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdAceptar.Click
         If ValidarDatos() Then
             If idFamily = 0 Then
+
+                If Not ValidarNombreDuplicado() Then
+                    Return
+                End If
+
                 Dim newIdFamily As Long = _Family.Add(txtNombre.Text.ToString())
                 idFamily = newIdFamily
             Else
@@ -35,14 +40,20 @@ Public Class FamiliaFicha
         If (Utilities.Empty(txtNombre.Text.ToString())) Then
             res = False
             Utilities.ShowExclamationMessage("Debe completar el nombre")
-        Else
-            Dim familias As DataTable = _Family.GetData()
-            If (Utilities.ExistsRecord(familias, "nombre", txtNombre.Text)) Then
-                res = False
-                Utilities.ShowExclamationMessage("Ya existe una familia con ese nombre")
-            End If
         End If
         ValidarDatos = res
+    End Function
+
+    Private Function ValidarNombreDuplicado() As Boolean
+        Dim res As Boolean = True
+        Dim familias As DataTable = _Family.GetData()
+
+        If (Utilities.ExistsRecord(familias, "nombre", txtNombre.Text)) Then
+            res = False
+            Utilities.ShowExclamationMessage("Ya existe una familia con ese nombre")
+        End If
+
+        Return res
     End Function
 
     Private Sub NuevoFamily_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -63,7 +74,7 @@ Public Class FamiliaFicha
     End Sub
     Private Sub cargarCombos()
         Try
-
+            SetSelectControlLabels()
             Dim d As DataTable = _Permisos.GetDataByIdFamiliaDispo(idFamily)
             For Each r As DataRow In d.Rows
                 SelectControl1.Add(r("descripcion").ToString(), r("id_patt").ToString())
@@ -85,7 +96,6 @@ Public Class FamiliaFicha
         Try
             'Carga del registro para posterior edición de Family
             cargarCombos()
-            SetSelectControlLabels()
             Dim dt As DataTable = _Family.GetDataById(idFamily)
             txtNombre.Text = dt.Rows(0)("Nombre").ToString()
         Catch ex As Exception

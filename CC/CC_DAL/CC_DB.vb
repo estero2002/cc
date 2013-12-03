@@ -357,14 +357,14 @@ Namespace CC_DBTableAdapters
     End Class
 
     Partial Public Class family_patternTableAdapter
-        Public Overridable Overloads Function Insert(ByRef id As Long, ByVal id_fam As Global.System.Nullable(Of Integer), ByVal id_patt As Global.System.Nullable(Of Integer), ByVal strval As String) As Integer
+        Public Overridable Overloads Function Insert(ByRef id As Long, ByVal id_fam As Global.System.Nullable(Of Long), ByVal id_patt As Global.System.Nullable(Of Long), ByVal strval As String) As Integer
             If (id_fam.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(id_fam.Value, Integer)
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(id_fam.Value, Long)
             Else
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             End If
             If (id_patt.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(id_patt.Value, Integer)
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(id_patt.Value, Long)
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             End If

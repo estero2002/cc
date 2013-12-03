@@ -72,7 +72,7 @@ Public Class Family
         Dim dt As DataTable
         dt = GetDataById_e(id)
         Dim dr As DataRow = dt.Rows(0)
-        dr("id_Family") = id
+        'dr("id_Family") = id
         dr("nombre") = nombre
         encryptDataTable(dt)
         Log.Record("Family.Update", _idUsuarioActual, id, nombre)

@@ -120,9 +120,12 @@
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtNombre.TabIndex" type="System.Int32, mscorlib">
-    <value>67</value>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FamiliaFicha</value>
@@ -130,11 +133,11 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LblEmptyNameMsg.Name" xml:space="preserve">
-    <value>LblEmptyNameMsg</value>
+  <data name="&gt;&gt;SelectControl1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="Label3.Text" xml:space="preserve">
-    <value>Nombre</value>
+  <data name="&gt;&gt;SelectControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
@@ -149,8 +152,8 @@
   <data name="&gt;&gt;cmdSalir.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;LblEmptyNameMsg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;cmdSalir.Name" xml:space="preserve">
+    <value>cmdSalir</value>
   </data>
   <data name="cmdAceptar.Text" xml:space="preserve">
     <value>Aceptar</value>
@@ -182,8 +185,8 @@
   <data name="cmdSalir.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
   </data>
-  <data name="LblEmptyNameMsg.TabIndex" type="System.Int32, mscorlib">
-    <value>81</value>
+  <data name="&gt;&gt;txtNombre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>121, 29</value>
@@ -191,8 +194,8 @@
   <data name="&gt;&gt;txtNombre.Name" xml:space="preserve">
     <value>txtNombre</value>
   </data>
-  <data name="&gt;&gt;SelectControl1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="txtNombre.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
   </data>
   <data name="&gt;&gt;txtNombre.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -206,11 +209,11 @@
   <data name="SelectControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>416, 108</value>
   </data>
-  <data name="&gt;&gt;SelectControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="SelectControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
   </data>
-  <data name="&gt;&gt;cmdSalir.Name" xml:space="preserve">
-    <value>cmdSalir</value>
+  <data name="cmdAceptar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 195</value>
   </data>
   <data name="&gt;&gt;cmdAceptar.Parent" xml:space="preserve">
     <value>$this</value>
@@ -221,32 +224,17 @@
   <data name="&gt;&gt;cmdAceptar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtNombre.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LblEmptyNameMsg.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>440, 232</value>
   </data>
   <data name="cmdSalir.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;cmdAceptar.Name" xml:space="preserve">
     <value>cmdAceptar</value>
   </data>
-  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="LblEmptyNameMsg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 217</value>
-  </data>
-  <data name="cmdAceptar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 195</value>
+  <data name="&gt;&gt;txtNombre.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -255,8 +243,8 @@
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="SelectControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>82</value>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Nombre</value>
   </data>
   <data name="cmdAceptar.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -264,17 +252,8 @@
   <data name="cmdSalir.Location" type="System.Drawing.Point, System.Drawing">
     <value>241, 195</value>
   </data>
-  <data name="&gt;&gt;txtNombre.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;cmdSalir.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;LblEmptyNameMsg.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="LblEmptyNameMsg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
