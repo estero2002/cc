@@ -111,10 +111,9 @@ Namespace CC_DBTableAdapters
         End Function
     End Class
     Partial Public Class clienteTableAdapter
-        Public Overridable Overloads Function Insert(ByRef id As Long, ByVal dni As Global.System.Nullable(Of Integer), ByVal apellido As String, ByVal nombre As String, ByVal direccion As String, ByVal email As String, ByVal strval As Global.System.Nullable(Of Integer)) As Integer
-            id = 0
+        Public Overridable Overloads Function Insert(ByRef id As Long, ByVal dni As Global.System.Nullable(Of Long), ByVal apellido As String, ByVal nombre As String, ByVal direccion As String, ByVal email As String, ByVal strval As Global.System.Nullable(Of Long)) As Integer
             If (dni.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(dni.Value, Integer)
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(dni.Value, Long)
             Else
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             End If
@@ -139,7 +138,7 @@ Namespace CC_DBTableAdapters
                 Me.Adapter.InsertCommand.Parameters(4).Value = CType(email, String)
             End If
             If (strval.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(5).Value = CType(strval.Value, Integer)
+                Me.Adapter.InsertCommand.Parameters(5).Value = CType(strval.Value, Long)
             Else
                 Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
             End If

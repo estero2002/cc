@@ -33,7 +33,7 @@ Public Class Cliente
         Dim dt As CC_DAL.CC_DB.clienteDataTable
         Dim row As DataRow
         ape = Encriptor.ShiftK(ape, 1)
-        dt = Adapter.GetDataByApeNom(ape)
+        dt = Adapter.GetDataByApeNom(ape, ape)
         'dt.Columns.Add("clienteDisplay")
         Dim col As New DataColumn
         col.ColumnName = "cliente"
@@ -99,7 +99,7 @@ Public Class Cliente
         Dim dt As DataTable
         dt = GetDataById_e(id)
         Dim dr As DataRow = dt.Rows(0)
-        dr("id_cliente") = id
+        'dr("id_cliente") = id
         dr("dni") = dni
         dr("nombre") = nombre
         dr("apellido") = apellido
