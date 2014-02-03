@@ -117,432 +117,432 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;btnAsignarDisponible.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblUsuario.Name" xml:space="preserve">
-    <value>lblUsuario</value>
-  </data>
-  <data name="&gt;&gt;lblAsignados.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblUsuario.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lstAsignados.Name" xml:space="preserve">
-    <value>lstAsignados</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnQuitarDenegado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 235</value>
-  </data>
-  <data name="btnAsignarDenegado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 235</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAsignarDisponible.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;lstDenegados.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnAsignarDenegado.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="cmbUsuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 16</value>
   </data>
   <data name="cmbUsuario.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 22</value>
   </data>
-  <data name="cmbUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 16</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>CC.FormBase, CC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="btnDenegarDisponible.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="btnDenegarAsignado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>314, 235</value>
-  </data>
-  <data name="btnQuitarAsignado.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="btnAsignarDisponible.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btnAsignarDenegado.Name" xml:space="preserve">
-    <value>btnAsignarDenegado</value>
-  </data>
-  <data name="btnQuitarDenegado.Text" xml:space="preserve">
-    <value>&lt; Disponible</value>
-  </data>
-  <data name="lblUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
-  </data>
-  <data name="btnBuscar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cmbUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="lstAsignados.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 147</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>622, 325</value>
-  </data>
-  <data name="btnAsignarDisponible.Text" xml:space="preserve">
-    <value>Asignar &gt;</value>
-  </data>
-  <data name="lblAsignados.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 13</value>
-  </data>
-  <data name="&gt;&gt;btnDenegarAsignado.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnBuscar.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="lblAsignados.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 62</value>
-  </data>
-  <data name="btnDenegarDisponible.Text" xml:space="preserve">
-    <value>Denegar &gt;</value>
-  </data>
-  <data name="&gt;&gt;btnDenegarDisponible.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnBuscar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>314, 16</value>
-  </data>
-  <data name="lblUsuario.Text" xml:space="preserve">
-    <value>Usuario</value>
-  </data>
-  <data name="&gt;&gt;btnQuitarAsignado.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
-    <value>btnCancelar</value>
-  </data>
-  <data name="lstDisponibles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 82</value>
-  </data>
-  <data name="lblDisponibles.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblDisponibles.Text" xml:space="preserve">
-    <value>Permisos Disponibles</value>
-  </data>
-  <data name="&gt;&gt;cmbUsuario.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="btnGuardar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btnAsignarDisponible.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 235</value>
-  </data>
-  <data name="lblDisponibles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 13</value>
-  </data>
-  <data name="btnDenegarAsignado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;lblDenegados.Name" xml:space="preserve">
-    <value>lblDenegados</value>
-  </data>
-  <data name="btnQuitarAsignado.Text" xml:space="preserve">
-    <value>&lt; Disponible</value>
-  </data>
-  <data name="&gt;&gt;lstAsignados.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblDisponibles.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="btnDenegarDisponible.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btnAsignarDenegado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="lstDenegados.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 147</value>
-  </data>
-  <data name="&gt;&gt;lstDisponibles.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="lblDenegados.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 13</value>
-  </data>
-  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="lblDenegados.Text" xml:space="preserve">
-    <value>Permisos Denegados</value>
-  </data>
-  <data name="&gt;&gt;btnQuitarAsignado.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblUsuario.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblAsignados.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>314, 285</value>
-  </data>
-  <data name="&gt;&gt;btnQuitarDenegado.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnDenegarAsignado.Name" xml:space="preserve">
-    <value>btnDenegarAsignado</value>
-  </data>
-  <data name="&gt;&gt;lblUsuario.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lstAsignados.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnGuardar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 285</value>
-  </data>
-  <data name="btnQuitarAsignado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 235</value>
-  </data>
-  <data name="&gt;&gt;btnDenegarDisponible.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnGuardar.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Usuario_Permiso</value>
-  </data>
-  <data name="btnBuscar.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lstDenegados.Name" xml:space="preserve">
-    <value>lstDenegados</value>
-  </data>
-  <data name="&gt;&gt;lstAsignados.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;btnBuscar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnDenegarDisponible.Name" xml:space="preserve">
-    <value>btnDenegarDisponible</value>
-  </data>
-  <data name="&gt;&gt;btnDenegarAsignado.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lblDenegados.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnQuitarDenegado.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lstDisponibles.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnDenegarAsignado.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;lblDisponibles.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnGuardar.Text" xml:space="preserve">
-    <value>Guardar</value>
-  </data>
-  <data name="btnAsignarDenegado.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="lblDenegados.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 62</value>
-  </data>
-  <data name="btnAsignarDenegado.Text" xml:space="preserve">
-    <value>&lt; Asignar</value>
-  </data>
-  <data name="lblUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 21</value>
-  </data>
-  <data name="&gt;&gt;btnBuscar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnBuscar.Text" xml:space="preserve">
-    <value>Buscar</value>
-  </data>
-  <data name="&gt;&gt;lstDisponibles.Name" xml:space="preserve">
-    <value>lstDisponibles</value>
-  </data>
-  <data name="&gt;&gt;cmbUsuario.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnQuitarDenegado.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;cmbUsuario.Type" xml:space="preserve">
-    <value>CC.CustomComboBox, CC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;lblUsuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnDenegarDisponible.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 235</value>
-  </data>
-  <data name="&gt;&gt;btnAsignarDisponible.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btnAsignarDisponible.Name" xml:space="preserve">
-    <value>btnAsignarDisponible</value>
-  </data>
-  <data name="lstDisponibles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 147</value>
-  </data>
-  <data name="btnQuitarAsignado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btnGuardar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDisponibles.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnAsignarDenegado.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnQuitarDenegado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;lblDisponibles.Name" xml:space="preserve">
-    <value>lblDisponibles</value>
-  </data>
-  <data name="lblAsignados.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lstDenegados.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btnGuardar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnCancelar.Text" xml:space="preserve">
-    <value>Salir</value>
-  </data>
-  <data name="lblDenegados.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnGuardar.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;btnAsignarDenegado.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Asignador Usuario Permiso</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnQuitarDenegado.Name" xml:space="preserve">
-    <value>btnQuitarDenegado</value>
-  </data>
-  <data name="&gt;&gt;btnBuscar.Name" xml:space="preserve">
-    <value>btnBuscar</value>
-  </data>
-  <data name="lstAsignados.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 82</value>
-  </data>
-  <data name="&gt;&gt;btnGuardar.Name" xml:space="preserve">
-    <value>btnGuardar</value>
-  </data>
-  <data name="&gt;&gt;lstDenegados.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDenegados.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnDenegarAsignado.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;lblDisponibles.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;btnAsignarDisponible.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lstDisponibles.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblAsignados.Name" xml:space="preserve">
-    <value>lblAsignados</value>
-  </data>
-  <data name="&gt;&gt;btnQuitarAsignado.Name" xml:space="preserve">
-    <value>btnQuitarAsignado</value>
-  </data>
-  <data name="lblDisponibles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 63</value>
-  </data>
-  <data name="&gt;&gt;btnQuitarAsignado.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lblAsignados.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnDenegarAsignado.Text" xml:space="preserve">
-    <value>Denegar &gt;</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblDenegados.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="lblAsignados.Text" xml:space="preserve">
-    <value>Permisos Asignados</value>
-  </data>
-  <data name="&gt;&gt;btnDenegarDisponible.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lstDenegados.Location" type="System.Drawing.Point, System.Drawing">
-    <value>424, 82</value>
-  </data>
-  <data name="lstDisponibles.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lblAsignados.ZOrder" xml:space="preserve">
-    <value>9</value>
   </data>
   <data name="&gt;&gt;cmbUsuario.Name" xml:space="preserve">
     <value>cmbUsuario</value>
   </data>
+  <data name="&gt;&gt;cmbUsuario.Type" xml:space="preserve">
+    <value>CC.CustomComboBox, CC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cmbUsuario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbUsuario.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lblUsuario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblUsuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 21</value>
+  </data>
+  <data name="lblUsuario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
   <data name="lblUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="lblDenegados.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblUsuario.Text" xml:space="preserve">
+    <value>Usuario</value>
   </data>
-  <data name="&gt;&gt;lstDenegados.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;lblUsuario.Name" xml:space="preserve">
+    <value>lblUsuario</value>
+  </data>
+  <data name="&gt;&gt;lblUsuario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUsuario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblUsuario.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btnBuscar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 16</value>
+  </data>
+  <data name="btnBuscar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnBuscar.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnBuscar.Text" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="&gt;&gt;btnBuscar.Name" xml:space="preserve">
+    <value>btnBuscar</value>
+  </data>
+  <data name="&gt;&gt;btnBuscar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBuscar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnBuscar.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lstDisponibles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 82</value>
+  </data>
+  <data name="lstDisponibles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 147</value>
+  </data>
+  <data name="lstDisponibles.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lstDisponibles.Name" xml:space="preserve">
+    <value>lstDisponibles</value>
+  </data>
+  <data name="&gt;&gt;lstDisponibles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstDisponibles.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lstDisponibles.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lstAsignados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 82</value>
+  </data>
+  <data name="lstAsignados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 147</value>
   </data>
   <data name="lstAsignados.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="&gt;&gt;lstAsignados.Name" xml:space="preserve">
+    <value>lstAsignados</value>
+  </data>
+  <data name="&gt;&gt;lstAsignados.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstAsignados.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lstAsignados.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lstDenegados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>424, 82</value>
+  </data>
+  <data name="lstDenegados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 147</value>
+  </data>
+  <data name="lstDenegados.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lstDenegados.Name" xml:space="preserve">
+    <value>lstDenegados</value>
+  </data>
+  <data name="&gt;&gt;lstDenegados.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstDenegados.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lstDenegados.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblDisponibles.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDisponibles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 63</value>
+  </data>
+  <data name="lblDisponibles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
+  </data>
+  <data name="lblDisponibles.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblDisponibles.Text" xml:space="preserve">
+    <value>Permisos Disponibles</value>
+  </data>
+  <data name="&gt;&gt;lblDisponibles.Name" xml:space="preserve">
+    <value>lblDisponibles</value>
+  </data>
+  <data name="&gt;&gt;lblDisponibles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDisponibles.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblDisponibles.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblAsignados.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAsignados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 62</value>
+  </data>
+  <data name="lblAsignados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="lblAsignados.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblAsignados.Text" xml:space="preserve">
+    <value>Permisos Asignados</value>
+  </data>
+  <data name="&gt;&gt;lblAsignados.Name" xml:space="preserve">
+    <value>lblAsignados</value>
+  </data>
+  <data name="&gt;&gt;lblAsignados.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAsignados.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblAsignados.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblDenegados.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDenegados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 62</value>
+  </data>
+  <data name="lblDenegados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="lblDenegados.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblDenegados.Text" xml:space="preserve">
+    <value>Permisos Denegados</value>
+  </data>
+  <data name="&gt;&gt;lblDenegados.Name" xml:space="preserve">
+    <value>lblDenegados</value>
+  </data>
+  <data name="&gt;&gt;lblDenegados.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDenegados.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblDenegados.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btnAsignarDisponible.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 235</value>
+  </data>
+  <data name="btnAsignarDisponible.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnAsignarDisponible.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnAsignarDisponible.Text" xml:space="preserve">
+    <value>Asignar &gt;</value>
+  </data>
+  <data name="&gt;&gt;btnAsignarDisponible.Name" xml:space="preserve">
+    <value>btnAsignarDisponible</value>
+  </data>
+  <data name="&gt;&gt;btnAsignarDisponible.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAsignarDisponible.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAsignarDisponible.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnDenegarDisponible.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 235</value>
+  </data>
+  <data name="btnDenegarDisponible.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnDenegarDisponible.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnDenegarDisponible.Text" xml:space="preserve">
+    <value>Denegar &gt;</value>
+  </data>
+  <data name="&gt;&gt;btnDenegarDisponible.Name" xml:space="preserve">
+    <value>btnDenegarDisponible</value>
+  </data>
+  <data name="&gt;&gt;btnDenegarDisponible.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDenegarDisponible.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnDenegarDisponible.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnDenegarAsignado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 235</value>
+  </data>
+  <data name="btnDenegarAsignado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnDenegarAsignado.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnDenegarAsignado.Text" xml:space="preserve">
+    <value>Denegar &gt;</value>
+  </data>
+  <data name="&gt;&gt;btnDenegarAsignado.Name" xml:space="preserve">
+    <value>btnDenegarAsignado</value>
+  </data>
+  <data name="&gt;&gt;btnDenegarAsignado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDenegarAsignado.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnDenegarAsignado.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnQuitarAsignado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 235</value>
+  </data>
+  <data name="btnQuitarAsignado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnQuitarAsignado.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="btnQuitarAsignado.Text" xml:space="preserve">
+    <value>&lt; Disponible</value>
+  </data>
+  <data name="&gt;&gt;btnQuitarAsignado.Name" xml:space="preserve">
+    <value>btnQuitarAsignado</value>
+  </data>
+  <data name="&gt;&gt;btnQuitarAsignado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnQuitarAsignado.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnQuitarAsignado.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnAsignarDenegado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 235</value>
+  </data>
+  <data name="btnAsignarDenegado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnAsignarDenegado.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnAsignarDenegado.Text" xml:space="preserve">
+    <value>&lt; Asignar</value>
+  </data>
+  <data name="&gt;&gt;btnAsignarDenegado.Name" xml:space="preserve">
+    <value>btnAsignarDenegado</value>
+  </data>
+  <data name="&gt;&gt;btnAsignarDenegado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAsignarDenegado.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAsignarDenegado.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnQuitarDenegado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>516, 235</value>
+  </data>
+  <data name="btnQuitarDenegado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnQuitarDenegado.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnQuitarDenegado.Text" xml:space="preserve">
+    <value>&lt; Disponible</value>
+  </data>
+  <data name="&gt;&gt;btnQuitarDenegado.Name" xml:space="preserve">
+    <value>btnQuitarDenegado</value>
+  </data>
   <data name="&gt;&gt;btnQuitarDenegado.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnQuitarDenegado.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnQuitarDenegado.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnGuardar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 285</value>
+  </data>
+  <data name="btnGuardar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnGuardar.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btnGuardar.Text" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="&gt;&gt;btnGuardar.Name" xml:space="preserve">
+    <value>btnGuardar</value>
+  </data>
+  <data name="&gt;&gt;btnGuardar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGuardar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnGuardar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 285</value>
+  </data>
+  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btnCancelar.Text" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
+    <value>btnCancelar</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>622, 325</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Asignador Usuario Permiso</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Usuario_Permiso</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>CC.FormBase, CC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
 </root>

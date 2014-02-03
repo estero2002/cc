@@ -28,6 +28,18 @@ Public Class Permisos
         Log.Record("Permisos.GetDataByIdFamilia", _idUsuarioActual, id_familia)
         Return Adapter.GetDataByIdFamilia(id_familia)
     End Function
+    Public Function GetDataByIdUsuarioDispo(ByVal id_usuario As Long) As DataTable
+        Log.Record("Permisos.GetDataByIdUsuarioDispo", _idUsuarioActual, id_usuario)
+        Return Adapter.GetDataByIdUsuarioDispo(id_usuario)
+    End Function
+    Public Function GetDataByIdUsuario(ByVal id_usuario As Long) As DataTable
+        Log.Record("Permisos.GetDataByIdUsuario", _idUsuarioActual, id_usuario)
+        Return Adapter.GetDataByIdUsuario(id_usuario)
+    End Function
+    Public Function GetDataByIdUsuarioNeg(ByVal id_usuario As Long) As DataTable
+        Log.Record("Permisos.GetDataByIdUsuarioNeg", _idUsuarioActual, id_usuario)
+        Return Adapter.GetDataByIdUsuarioNeg(id_usuario)
+    End Function
     Public Sub Close()
         Adapter = Nothing
     End Sub

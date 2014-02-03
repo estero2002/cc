@@ -11,6 +11,9 @@ Public Class ConcreteUsuarioFactory
     Public Overrides Function GetUsuarioFamilias() As UsuarioFamilias
         Return New UsuarioFamilias(_idUsuarioActual)
     End Function
+    Public Overrides Function GetUsuarioPermisos() As UsuarioPermisos
+        Return New UsuarioPermisos(_idUsuarioActual)
+    End Function
 End Class
 
 Public Class ConcreteProductoFactory
