@@ -186,31 +186,37 @@
     <value>Reportes</value>
   </data>
   <data name="UsuarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 22</value>
+    <value>215, 22</value>
   </data>
   <data name="UsuarioToolStripMenuItem.Text" xml:space="preserve">
     <value>Usuario</value>
   </data>
   <data name="AsiagnadorFamiliaPermisoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 22</value>
+    <value>215, 22</value>
   </data>
   <data name="AsiagnadorFamiliaPermisoToolStripMenuItem.Text" xml:space="preserve">
     <value>Asignador Familia_Permiso</value>
   </data>
   <data name="AsignadorUsuarioFamiliaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 22</value>
+    <value>215, 22</value>
   </data>
   <data name="AsignadorUsuarioFamiliaToolStripMenuItem.Text" xml:space="preserve">
     <value>Asignador Usuario_Familia</value>
   </data>
+  <data name="AsignadorUsuarioPermisoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 22</value>
+  </data>
+  <data name="AsignadorUsuarioPermisoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Asignador Usuario_Permiso</value>
+  </data>
   <data name="BitacoraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 22</value>
+    <value>215, 22</value>
   </data>
   <data name="BitacoraToolStripMenuItem.Text" xml:space="preserve">
     <value>Bitacora</value>
   </data>
   <data name="RegenerarDVDeTablasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 22</value>
+    <value>215, 22</value>
   </data>
   <data name="RegenerarDVDeTablasToolStripMenuItem.Text" xml:space="preserve">
     <value>Regenerar DV de Tablas</value>
@@ -432,6 +438,12 @@
     <value>AsignadorUsuarioFamiliaToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;AsignadorUsuarioFamiliaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AsignadorUsuarioPermisoToolStripMenuItem.Name" xml:space="preserve">
+    <value>AsignadorUsuarioPermisoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;AsignadorUsuarioPermisoToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;BitacoraToolStripMenuItem.Name" xml:space="preserve">

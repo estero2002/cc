@@ -29,6 +29,8 @@ Public Class MDI_CC
     Private DVForm As Form
     Private LibreriaForm As Form
 
+    Private UsuarioPermisoForm As Form
+
     Private NoDeshabilitar As String = "SalirToolStripMenuItem"
     Public Sub New()
         MyBase.New()
@@ -144,6 +146,9 @@ Public Class MDI_CC
     End Sub
     Private Sub DVForm_close()
         DVForm = Nothing
+    End Sub
+    Private Sub UsuarioPermisoForm_close()
+        UsuarioPermisoForm = Nothing
     End Sub
     
 
@@ -442,6 +447,17 @@ Public Class MDI_CC
             RestoreForm.Activate()
         End If
 
+    End Sub
+
+    Private Sub AsignadorUsuarioPermisoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AsignadorUsuarioPermisoToolStripMenuItem.Click
+        If (UsuarioPermisoForm Is Nothing) Then
+            UsuarioPermisoForm = New Usuario_Permiso
+            UsuarioPermisoForm.MdiParent = Me
+            AddHandler UsuarioPermisoForm.FormClosing, AddressOf UsuarioPermisoForm_close
+            UsuarioPermisoForm.Show()
+        Else
+            UsuarioPermisoForm.Activate()
+        End If
     End Sub
 End Class
 

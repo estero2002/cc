@@ -41,6 +41,7 @@ Partial Class MDI_CC
         Me.UsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AsiagnadorFamiliaPermisoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AsignadorUsuarioFamiliaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.AsignadorUsuarioPermisoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.BitacoraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.RegenerarDVDeTablasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.RespaldoDeInformacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -123,7 +124,7 @@ Partial Class MDI_CC
         '
         'SeguridadToolStripMenuItem
         '
-        Me.SeguridadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem, Me.AsiagnadorFamiliaPermisoToolStripMenuItem, Me.AsignadorUsuarioFamiliaToolStripMenuItem, Me.BitacoraToolStripMenuItem, Me.RegenerarDVDeTablasToolStripMenuItem})
+        Me.SeguridadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem, Me.AsiagnadorFamiliaPermisoToolStripMenuItem, Me.AsignadorUsuarioFamiliaToolStripMenuItem, Me.AsignadorUsuarioPermisoToolStripMenuItem, Me.BitacoraToolStripMenuItem, Me.RegenerarDVDeTablasToolStripMenuItem})
         Me.SeguridadToolStripMenuItem.Name = "SeguridadToolStripMenuItem"
         resources.ApplyResources(Me.SeguridadToolStripMenuItem, "SeguridadToolStripMenuItem")
         '
@@ -141,6 +142,11 @@ Partial Class MDI_CC
         '
         Me.AsignadorUsuarioFamiliaToolStripMenuItem.Name = "AsignadorUsuarioFamiliaToolStripMenuItem"
         resources.ApplyResources(Me.AsignadorUsuarioFamiliaToolStripMenuItem, "AsignadorUsuarioFamiliaToolStripMenuItem")
+        '
+        'AsignadorUsuarioPermisoToolStripMenuItem
+        '
+        Me.AsignadorUsuarioPermisoToolStripMenuItem.Name = "AsignadorUsuarioPermisoToolStripMenuItem"
+        resources.ApplyResources(Me.AsignadorUsuarioPermisoToolStripMenuItem, "AsignadorUsuarioPermisoToolStripMenuItem")
         '
         'BitacoraToolStripMenuItem
         '
@@ -244,5 +250,6 @@ Partial Class MDI_CC
 
     Friend WithEvents ProductoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RestauracionDeInformacionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AsignadorUsuarioPermisoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
