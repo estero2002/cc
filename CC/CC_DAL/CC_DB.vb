@@ -576,6 +576,46 @@ Namespace CC_DBTableAdapters
             End Try
         End Function
     End Class
+
+    Partial Public Class usuario_pattern_negTableAdapter
+        Public Overridable Overloads Function Insert(ByRef id As Long, ByVal id_usuario As Global.System.Nullable(Of Long), ByVal id_patt As Global.System.Nullable(Of Long), ByVal strval As String) As Integer
+            If (id_usuario.HasValue = True) Then
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(id_usuario.Value, Long)
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
+            End If
+            If (id_patt.HasValue = True) Then
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(id_patt.Value, Long)
+            Else
+                Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (strval Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(strval, String)
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open()
+            End If
+            Try
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                If returnValue = 1 Then
+                    Dim cmd = New OleDb.OleDbCommand
+                    cmd.CommandText = "select @@IDENTITY"
+                    cmd.CommandType = CommandType.Text
+                    cmd.Connection = Me.Adapter.InsertCommand.Connection
+                    id = cmd.ExecuteScalar()
+                End If
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close()
+                End If
+            End Try
+        End Function
+    End Class
 End Namespace
 
 Partial Public Class CC_DB

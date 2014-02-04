@@ -40,6 +40,10 @@ Public Class Permisos
         Log.Record("Permisos.GetDataByIdUsuarioNeg", _idUsuarioActual, id_usuario)
         Return Adapter.GetDataByIdUsuarioNeg(id_usuario)
     End Function
+    Public Function GetDataByIdUsuarioDispoNeg(ByVal id_usuario As Long) As DataTable
+        Log.Record("Permisos.GetDataByIdUsuarioDispoNeg", _idUsuarioActual, id_usuario)
+        Return Adapter.GetDataByIdUsuarioDispoNeg(id_usuario)
+    End Function
     Public Sub Close()
         Adapter = Nothing
     End Sub

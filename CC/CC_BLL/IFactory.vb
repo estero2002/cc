@@ -7,6 +7,7 @@ Public MustInherit Class IUsuarioFactory
     Public MustOverride Function GetUsuario() As Usuario
     Public MustOverride Function GetUsuarioFamilias() As UsuarioFamilias
     Public MustOverride Function GetUsuarioPermisos() As UsuarioPermisos
+    Public MustOverride Function GetUsuarioPermisosNeg() As UsuarioPermisosNeg
 End Class
 Public MustInherit Class IProductoFactory
     Public MustOverride Function GetProducto() As Producto

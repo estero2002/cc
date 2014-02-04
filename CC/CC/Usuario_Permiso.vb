@@ -4,6 +4,7 @@ Public Class Usuario_Permiso
     Dim _usuario As Usuario
     Dim _Permisos As Permisos
     Dim _usuarioPermisos As UsuarioPermisos
+    Dim _usuarioPermisosNeg As UsuarioPermisosNeg
     Dim idUsuario As Long
 
     Dim asignadosAgregados As New ArrayList()
@@ -18,6 +19,7 @@ Public Class Usuario_Permiso
         _usuario = _usuarioFactory.GetUsuario()
         _Permisos = _permisosfactory.GetPermisos()
         _usuarioPermisos = _usuarioFactory.GetUsuarioPermisos()
+        _usuarioPermisosNeg = _usuarioFactory.GetUsuarioPermisosNeg()
 
         cmbUsuario.DisplayMember = "usuario"
         cmbUsuario.ValueMember = "id_usuario"
@@ -42,10 +44,20 @@ Public Class Usuario_Permiso
     Private Sub cargarPermisosDeUsuario()
         Try
             Dim d As DataTable = _Permisos.GetDataByIdUsuarioDispo(idUsuario)
+            Dim d2 As DataTable = _Permisos.GetDataByIdUsuarioDispoNeg(idUsuario)
             For Each r As DataRow In d.Rows
-                lstDisponibles.Items.Add(New cItem(r("descripcion").ToString(), r("id_patt").ToString()))
+                Dim found As Boolean = False
+                For Each r2 As DataRow In d2.Rows
+                    If r2("id_patt").ToString() = r("id_patt").ToString() Then
+                        found = True
+                    End If
+                Next
+                If found Then
+                    lstDisponibles.Items.Add(New cItem(r("descripcion").ToString(), r("id_patt").ToString()))
+                End If
             Next
             d = Nothing
+            d2 = Nothing
 
             d = _Permisos.GetDataByIdUsuario(idUsuario)
             For Each r As DataRow In d.Rows
@@ -180,6 +192,7 @@ Public Class Usuario_Permiso
 
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
         _usuarioPermisos.UpdateSelected(idUsuario, AsignadosAgregadosToCsv(), AsignadosRemovidosToCsv())
+        _usuarioPermisosNeg.UpdateSelected(idUsuario, DenegadosAgregadosToCsv(), DenegadosRemovidosToCsv())
         MessageBox.Show("El registro se actualizó exitosamente")
         Me.Close()
     End Sub
@@ -198,6 +211,28 @@ Public Class Usuario_Permiso
     Private Function AsignadosRemovidosToCsv() As String
         Dim s As String = ""
         For Each item As Object In asignadosRemovidos
+            s = s + (CType(item, cItem)).id + ","
+        Next
+        If (s.Length > 0) Then
+            s = s.Substring(0, s.Length - 1)
+        End If
+        Return s
+    End Function
+
+    Private Function DenegadosAgregadosToCsv() As String
+        Dim s As String = ""
+        For Each item As Object In denegadosAgregados
+            s = s + (CType(item, cItem)).id + ","
+        Next
+        If (s.Length > 0) Then
+            s = s.Substring(0, s.Length - 1)
+        End If
+        Return s
+    End Function
+
+    Private Function DenegadosRemovidosToCsv() As String
+        Dim s As String = ""
+        For Each item As Object In denegadosRemovidos
             s = s + (CType(item, cItem)).id + ","
         Next
         If (s.Length > 0) Then

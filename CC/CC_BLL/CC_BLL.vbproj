@@ -102,6 +102,7 @@
     <Compile Include="Usuario.vb" />
     <Compile Include="UsuarioFamilias.vb" />
     <Compile Include="UsuarioPermisos.vb" />
+    <Compile Include="UsuarioPermisosNeg.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
