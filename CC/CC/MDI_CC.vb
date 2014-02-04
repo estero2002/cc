@@ -398,7 +398,7 @@ Public Class MDI_CC
         Dim _permisos As Permisos = _permisosfactory.GetPermisos()
         Dim dt As DataTable
         Dim CantHabilitados As Integer, CantSubItemsHabilitados As Integer
-        dt = _Permisos.GetDataByUsuario(Context.idUsuarioActual)
+        dt = _permisos.GetPermisosByUsuario(Context.idUsuarioActual)
         For Each OpcionMenu As ToolStripMenuItem In MenuStrip.Items
             'MessageBox.Show("Opcion Menu " + OpcionMenu.Name)
             CantHabilitados = 0
