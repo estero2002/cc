@@ -38,7 +38,17 @@ Public Class UsuariosBloqueados
         For Each row In dt.Rows
             row("usuario") = Encriptor.ShiftK(row("apellido"), -1) + ", " + Encriptor.ShiftK(row("nombre"), -1)
         Next
-        Log.Record("Usuario.GetDataConDataUsuario", _idUsuarioActual, "")
+        Log.Record("UsuariosBloqueados.GetDataConDataUsuario", _idUsuarioActual, "")
+        Return dt
+    End Function
+
+    Public Function GetDataByIdUsuario(ByVal id_usuario As Long, Optional ByVal validate As Boolean = True) As DataTable
+        Dim dt As DataTable = Adapter.GetDataById(id_usuario)
+        If validate Then
+            ValidateData_e(dt)
+            unencryptDataTable(dt)
+        End If
+        Log.Record("UsuariosBloqueados.GetDataByIdUsuario", _idUsuarioActual, id_usuario)
         Return dt
     End Function
 
