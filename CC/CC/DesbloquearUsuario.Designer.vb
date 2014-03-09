@@ -31,52 +31,35 @@ Partial Class DesbloquearUsuario
         '
         'grillaUsuarios
         '
-        Me.grillaUsuarios.AccessibleDescription = Nothing
-        Me.grillaUsuarios.AccessibleName = Nothing
         Me.grillaUsuarios.AllowUserToAddRows = False
         Me.grillaUsuarios.AllowUserToDeleteRows = False
         Me.grillaUsuarios.AllowUserToResizeRows = False
-        resources.ApplyResources(Me.grillaUsuarios, "grillaUsuarios")
         Me.grillaUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.grillaUsuarios.BackgroundImage = Nothing
         Me.grillaUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grillaUsuarios.Font = Nothing
+        resources.ApplyResources(Me.grillaUsuarios, "grillaUsuarios")
         Me.grillaUsuarios.MultiSelect = False
         Me.grillaUsuarios.Name = "grillaUsuarios"
         Me.grillaUsuarios.ReadOnly = True
         '
         'btnDesbloquear
         '
-        Me.btnDesbloquear.AccessibleDescription = Nothing
-        Me.btnDesbloquear.AccessibleName = Nothing
         resources.ApplyResources(Me.btnDesbloquear, "btnDesbloquear")
-        Me.btnDesbloquear.BackgroundImage = Nothing
-        Me.btnDesbloquear.Font = Nothing
         Me.btnDesbloquear.Name = "btnDesbloquear"
         Me.btnDesbloquear.UseVisualStyleBackColor = True
         '
         'btnSalir
         '
-        Me.btnSalir.AccessibleDescription = Nothing
-        Me.btnSalir.AccessibleName = Nothing
         resources.ApplyResources(Me.btnSalir, "btnSalir")
-        Me.btnSalir.BackgroundImage = Nothing
-        Me.btnSalir.Font = Nothing
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.UseVisualStyleBackColor = True
         '
         'DesbloquearUsuario
         '
-        Me.AccessibleDescription = Nothing
-        Me.AccessibleName = Nothing
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Nothing
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnDesbloquear)
         Me.Controls.Add(Me.grillaUsuarios)
-        Me.Font = Nothing
-        Me.Icon = Nothing
         Me.Name = "DesbloquearUsuario"
         CType(Me.grillaUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

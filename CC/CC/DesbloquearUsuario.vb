@@ -29,4 +29,18 @@ Public Class DesbloquearUsuario
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSalir.Click
         Me.Close()
     End Sub
+
+    Private Sub btnDesbloquear_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDesbloquear.Click
+        If Not grillaUsuarios.CurrentRow Is Nothing Then
+            If Utilities.YesNoDialog("Esta seguro que desea desbloquear este usuario?") = Windows.Forms.DialogResult.Yes Then
+                Dim _factory As New ConcreteUsuariosBloqueadosFactory(Context.idUsuarioActual)
+                Dim _usrs As UsuariosBloqueados = _factory.GetUsuariosBloqueados()
+                _usrs.Delete(grillaUsuarios.CurrentRow.Cells("id_usuario").Value.ToString())
+                _usrs = Nothing
+                BuscarUsuariosBloqueados()
+            End If
+        Else
+            Utilities.ShowExclamationMessage("No hay ninguna fila seleccionada en la grilla")
+        End If
+    End Sub
 End Class

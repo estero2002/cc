@@ -117,93 +117,97 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="grillaUsuarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="grillaUsuarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>521, 258</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="grillaUsuarios.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;grillaUsuarios.Name" xml:space="preserve">
+    <value>grillaUsuarios</value>
+  </data>
+  <data name="&gt;&gt;grillaUsuarios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grillaUsuarios.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;grillaUsuarios.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnDesbloquear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 288</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnDesbloquear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 33</value>
+  </data>
+  <data name="btnDesbloquear.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnDesbloquear.Text" xml:space="preserve">
+    <value>Desbloquear Usuario</value>
+  </data>
+  <data name="&gt;&gt;btnDesbloquear.Name" xml:space="preserve">
+    <value>btnDesbloquear</value>
+  </data>
+  <data name="&gt;&gt;btnDesbloquear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDesbloquear.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnDesbloquear.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="btnSalir.Location" type="System.Drawing.Point, System.Drawing">
     <value>467, 288</value>
   </data>
+  <data name="btnSalir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 33</value>
+  </data>
+  <data name="btnSalir.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnSalir.Text" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Name" xml:space="preserve">
+    <value>btnSalir</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>563, 332</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>DesbloquearUsuario</value>
-  </data>
-  <data name="btnDesbloquear.Text" xml:space="preserve">
-    <value>Desbloquear Usuario</value>
-  </data>
-  <data name="grillaUsuarios.Size" type="System.Drawing.Size, System.Drawing">
-    <value>521, 258</value>
-  </data>
-  <data name="&gt;&gt;grillaUsuarios.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnDesbloquear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 33</value>
-  </data>
-  <data name="&gt;&gt;btnDesbloquear.Name" xml:space="preserve">
-    <value>btnDesbloquear</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Desbloquear Usuario</value>
   </data>
-  <data name="&gt;&gt;btnDesbloquear.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DesbloquearUsuario</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="grillaUsuarios.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnDesbloquear.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="grillaUsuarios.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 24</value>
-  </data>
-  <data name="&gt;&gt;btnSalir.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnSalir.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnDesbloquear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>333, 288</value>
-  </data>
-  <data name="&gt;&gt;btnDesbloquear.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnDesbloquear.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnSalir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 33</value>
-  </data>
-  <data name="&gt;&gt;btnSalir.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnSalir.Text" xml:space="preserve">
-    <value>Salir</value>
-  </data>
-  <data name="&gt;&gt;grillaUsuarios.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grillaUsuarios.Name" xml:space="preserve">
-    <value>grillaUsuarios</value>
-  </data>
-  <data name="btnSalir.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnSalir.Name" xml:space="preserve">
-    <value>btnSalir</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>
