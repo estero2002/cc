@@ -30,6 +30,7 @@ Public Class MDI_CC
     Private LibreriaForm As Form
 
     Private UsuarioPermisoForm As Form
+    Private DesbloquearUsuarioForm As Form
 
     Private NoDeshabilitar As String = "SalirToolStripMenuItem"
     Public Sub New()
@@ -137,7 +138,7 @@ Public Class MDI_CC
     Private Sub UsuarioFamiliaForm_close()
         UsuarioFamiliaForm = Nothing
     End Sub
-    
+
     Private Sub BitacoraForm_close()
         BitacoraForm = Nothing
     End Sub
@@ -149,6 +150,9 @@ Public Class MDI_CC
     End Sub
     Private Sub UsuarioPermisoForm_close()
         UsuarioPermisoForm = Nothing
+    End Sub
+    Private Sub DesbloquearUsuarioForm_close()
+        DesbloquearUsuarioForm = Nothing
     End Sub
     
 
@@ -457,6 +461,17 @@ Public Class MDI_CC
             UsuarioPermisoForm.Show()
         Else
             UsuarioPermisoForm.Activate()
+        End If
+    End Sub
+
+    Private Sub DesbloquearUsuarioToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DesbloquearUsuarioToolStripMenuItem.Click
+        If (DesbloquearUsuarioForm Is Nothing) Then
+            DesbloquearUsuarioForm = New DesbloquearUsuario
+            DesbloquearUsuarioForm.MdiParent = Me
+            AddHandler DesbloquearUsuarioForm.FormClosing, AddressOf DesbloquearUsuarioForm_close
+            DesbloquearUsuarioForm.Show()
+        Else
+            DesbloquearUsuarioForm.Activate()
         End If
     End Sub
 End Class

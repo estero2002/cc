@@ -221,6 +221,12 @@
   <data name="RegenerarDVDeTablasToolStripMenuItem.Text" xml:space="preserve">
     <value>Regenerar DV de Tablas</value>
   </data>
+  <data name="DesbloquearUsuarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 22</value>
+  </data>
+  <data name="DesbloquearUsuarioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Desbloquear Usuario</value>
+  </data>
   <data name="SeguridadToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>223, 22</value>
   </data>
@@ -511,6 +517,12 @@
   </data>
   <data name="&gt;&gt;ToolTip.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DesbloquearUsuarioToolStripMenuItem.Name" xml:space="preserve">
+    <value>DesbloquearUsuarioToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;DesbloquearUsuarioToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MDI_CC</value>

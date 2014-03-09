@@ -171,6 +171,17 @@ Public Class ConcreteSecuenciaFactory
     End Function
 End Class
 
+Public Class ConcreteUsuariosBloqueadosFactory
+    Inherits IUsuariosBloqueadosFactory
+    Private _idUsuarioActual As Long
+    Public Sub New(ByVal idUsuarioActual As Long)
+        _idUsuarioActual = idUsuarioActual
+    End Sub
+    Public Overrides Function GetUsuariosBloqueados() As UsuariosBloqueados
+        Return New UsuariosBloqueados(_idUsuarioActual)
+    End Function
+End Class
+
 Public Class ConcreteDBFactory
     Inherits IDBFactory
     Private _idUsuarioActual As Long

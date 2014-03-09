@@ -123,6 +123,12 @@
     <Compile Include="CustomComboBox.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="DesbloquearUsuario.Designer.vb">
+      <DependentUpon>DesbloquearUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesbloquearUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DV.Designer.vb">
       <DependentUpon>DV.vb</DependentUpon>
     </Compile>
@@ -373,6 +379,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomComboBox.resx">
       <DependentUpon>CustomComboBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesbloquearUsuario.en-US.resx">
+      <DependentUpon>DesbloquearUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesbloquearUsuario.resx">
+      <DependentUpon>DesbloquearUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DV.resx">
       <DependentUpon>DV.vb</DependentUpon>

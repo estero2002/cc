@@ -51,6 +51,9 @@ End Class
 Public MustInherit Class ISecuenciaFactory
     Public MustOverride Function GetSecuencia() As Secuencia
 End Class
+Public MustInherit Class IUsuariosBloqueadosFactory
+    Public MustOverride Function GetUsuariosBloqueados() As UsuariosBloqueados
+End Class
 Public MustInherit Class IDBFactory
     Public MustOverride Function GetDB() As DB
 End Class

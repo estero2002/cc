@@ -54,6 +54,7 @@ Partial Class MDI_CC
         Me.StatusStrip = New System.Windows.Forms.StatusStrip
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.DesbloquearUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -124,7 +125,7 @@ Partial Class MDI_CC
         '
         'SeguridadToolStripMenuItem
         '
-        Me.SeguridadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem, Me.AsiagnadorFamiliaPermisoToolStripMenuItem, Me.AsignadorUsuarioFamiliaToolStripMenuItem, Me.AsignadorUsuarioPermisoToolStripMenuItem, Me.BitacoraToolStripMenuItem, Me.RegenerarDVDeTablasToolStripMenuItem})
+        Me.SeguridadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem, Me.AsiagnadorFamiliaPermisoToolStripMenuItem, Me.AsignadorUsuarioFamiliaToolStripMenuItem, Me.AsignadorUsuarioPermisoToolStripMenuItem, Me.BitacoraToolStripMenuItem, Me.RegenerarDVDeTablasToolStripMenuItem, Me.DesbloquearUsuarioToolStripMenuItem})
         Me.SeguridadToolStripMenuItem.Name = "SeguridadToolStripMenuItem"
         resources.ApplyResources(Me.SeguridadToolStripMenuItem, "SeguridadToolStripMenuItem")
         '
@@ -204,6 +205,11 @@ Partial Class MDI_CC
         Me.ToolStripStatusLabel.Name = "ToolStripStatusLabel"
         resources.ApplyResources(Me.ToolStripStatusLabel, "ToolStripStatusLabel")
         '
+        'DesbloquearUsuarioToolStripMenuItem
+        '
+        Me.DesbloquearUsuarioToolStripMenuItem.Name = "DesbloquearUsuarioToolStripMenuItem"
+        resources.ApplyResources(Me.DesbloquearUsuarioToolStripMenuItem, "DesbloquearUsuarioToolStripMenuItem")
+        '
         'MDI_CC
         '
         resources.ApplyResources(Me, "$this")
@@ -251,5 +257,6 @@ Partial Class MDI_CC
     Friend WithEvents ProductoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RestauracionDeInformacionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AsignadorUsuarioPermisoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DesbloquearUsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
