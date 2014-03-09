@@ -66,7 +66,6 @@ Public Class Usuario
 
     Public Function GetDataByUserName(ByVal userName As String) As DataTable
         Dim dt As DataTable = Adapter.GetDataByUsu(Encriptor.ShiftK(userName, 1))
-        _idUsuario = Int32.Parse(dt(0)("id_usuario").ToString())
         ValidateData_e(dt)
         unencryptDataTable(dt)
         Log.Record("Usuario.GetDataByUserName", _idUsuarioActual, userName)

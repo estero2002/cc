@@ -40,30 +40,32 @@ Public Class Login
                 Utilities.ShowExclamationMessage("Este usuario se encuentra bloqueado. Contacte a su administrador para desbloquearlo.")
                 Return
             End If
-        End If
 
-        If _usuario.ValidateUser(loginuser, loginpass) Then
-            dt = _usuario.GetDataByUserName(loginuser)
-            Context.idUsuarioActual = Int32.Parse(dt(0)("id_usuario").ToString())
-            Context.NickUsuarioActual = loginuser
-            Context.idioma = _lang.GetLangCodeByIdLang(dt(0)("id_lang").ToString())
-            _usuario.Close()
-            _lang.Close()
-            MDI_CC.Show()
-            Me.Hide()
-        Else
-            If (_intentos = 0) Then
+            If _usuario.ValidateUser(loginuser, loginpass) Then
                 dt = _usuario.GetDataByUserName(loginuser)
-                If (dt.Rows.Count > 0) Then
-                    _usuariosBloqueados.Add(Long.Parse(dt(0)("id_usuario").ToString()))
-                    Utilities.ShowExclamationMessage("Intentos agotados. El usuario se ha bloqueado. Contacte a su administrador para desbloquearlo.")
-                    _intentos = 5
-                    Return
-                End If
+                Context.idUsuarioActual = Int32.Parse(dt(0)("id_usuario").ToString())
+                Context.NickUsuarioActual = loginuser
+                Context.idioma = _lang.GetLangCodeByIdLang(dt(0)("id_lang").ToString())
+                _usuario.Close()
+                _lang.Close()
+                MDI_CC.Show()
+                Me.Hide()
             Else
-                _intentos = _intentos - 1
-                Utilities.ShowExclamationMessage("Usuario o contraseña incorrectos. Quedan " + _intentos.ToString() + " intentos. Luego el usuario se bloqueara.")
+                If (_intentos = 0) Then
+                    dt = _usuario.GetDataByUserName(loginuser)
+                    If (dt.Rows.Count > 0) Then
+                        _usuariosBloqueados.Add(Long.Parse(dt(0)("id_usuario").ToString()))
+                        Utilities.ShowExclamationMessage("Intentos agotados. El usuario se ha bloqueado. Contacte a su administrador para desbloquearlo.")
+                        _intentos = 5
+                        Return
+                    End If
+                Else
+                    _intentos = _intentos - 1
+                    Utilities.ShowExclamationMessage("Usuario o contraseña incorrectos. Quedan " + _intentos.ToString() + " intentos. Luego el usuario se bloqueara.")
+                End If
             End If
+        Else
+            Utilities.ShowExclamationMessage("Usuario o contraseña incorrectos.")
         End If
 
     End Sub

@@ -3,6 +3,8 @@ Public Class Usuario_Familia
     Dim _usuario As Usuario
     Dim _family As Family
     Dim _usuarioFamilias As UsuarioFamilias
+    Dim _usuarioPermisosNeg As UsuarioPermisosNeg
+    Dim _permisos As Permisos
     Dim idUsuario As Long
 
     Private Sub btnsalir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -36,16 +38,19 @@ Public Class Usuario_Familia
         Dim _factory As New ConcreteUsuarioFactory(Context.idUsuarioActual)
         Dim _factoryUsuarioFamilias As New ConcreteUsuarioFactory(Context.idUsuarioActual)
         Dim _familyfactory As New ConcreteFamilyFactory(Context.idUsuarioActual)
+        Dim _permisosFactory As New ConcretePermisosFactory(Context.idUsuarioActual)
 
         _family = _familyfactory.GetFamily()
         _usuario = _factory.GetUsuario()
         _usuarioFamilias = _factoryUsuarioFamilias.GetUsuarioFamilias()
+        _usuarioPermisosNeg = _factory.GetUsuarioPermisosNeg()
+        _permisos = _permisosFactory.GetPermisos()
+
         cmbUsuario.DisplayMember = "usuario"
         cmbUsuario.ValueMember = "id_usuario"
         cmbUsuario.setGetDataFunction(AddressOf _usuario.GetDataParaCombo)
         cmbUsuario.ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
         SetSelectControlLabels()
-
     End Sub
 
 
@@ -59,6 +64,17 @@ Public Class Usuario_Familia
 
     Private Sub btnAsignar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAsignar.Click
         If ValidarDatos() Then
+            Dim familiesToAdd As String = SelectControl1.csvAddedItems
+            If (familiesToAdd.Length > 0) Then
+                Dim toAdd() As String = familiesToAdd.Split(",")
+                For i As Integer = 0 To toAdd.Length - 1
+                    If (_usuarioPermisosNeg.EsFamiliaNegada(Long.Parse(toAdd(i)), idUsuario)) Then
+                        Dim dtFamilia As DataTable = _family.GetDataById(Long.Parse(toAdd(i)), False)
+                        Utilities.ShowExclamationMessage("No se puede asignar la familia " + dtFamilia.Rows(0)("nombre").ToString() + ". Uno de sus permisos esta denegado para este usuario.")
+                        Return
+                    End If
+                Next
+            End If
             _usuarioFamilias.UpdateSelected(idUsuario, SelectControl1.csvAddedItems, SelectControl1.csvRemovedItems)
             MessageBox.Show("El registro se actualizó exitosamente.")
             Me.Close()

@@ -40,6 +40,11 @@ Public Class UsuarioPermisosNeg
         Return res
     End Function
 
+    Public Function EsFamiliaNegada(ByVal id_fam As Long, ByVal id_usuario As Long) As Boolean
+        Dim dt As DataTable = Adapter.GetDataFamiliaNegadaByUsu(id_usuario, id_fam)
+        Return dt.Rows.Count > 0
+    End Function
+
     Public Overloads Function Add(ByVal id_usuario As Long, ByVal id_patt As Long) As Long
         Dim dt As DataTable
         Dim strval As Long = 0
