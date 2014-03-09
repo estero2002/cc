@@ -191,6 +191,18 @@ Public Class Usuario_Permiso
     End Sub
 
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
+        Dim denegadosAgregados As String = DenegadosAgregadosToCsv()
+        If (denegadosAgregados.Length > 0) Then
+            Dim toAdd() As String = denegadosAgregados.Split(",")
+            For i As Integer = 0 To toAdd.Length - 1
+                Dim dt As DataTable = _Permisos.GetDataPermisoFamByUsuPatt(idUsuario, Long.Parse(toAdd(i)))
+                If (dt.Rows.Count > 0) Then
+                    Utilities.ShowExclamationMessage("No se puede denegar el permiso " + dt.Rows(0)("Descripcion") + ". El mismo se encuentra asignado a traves de una familia.")
+                    Return
+                End If
+            Next
+        End If
+
         _usuarioPermisos.UpdateSelected(idUsuario, AsignadosAgregadosToCsv(), AsignadosRemovidosToCsv())
         _usuarioPermisosNeg.UpdateSelected(idUsuario, DenegadosAgregadosToCsv(), DenegadosRemovidosToCsv())
         MessageBox.Show("El registro se actualizó exitosamente")

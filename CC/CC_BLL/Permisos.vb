@@ -52,6 +52,10 @@ Public Class Permisos
         Log.Record("Permisos.GetDataByIdPatt", _idUsuarioActual, id_patt)
         Return Adapter.GetDataByIdPatt(id_patt)
     End Function
+    Public Function GetDataPermisoFamByUsuPatt(ByVal id_usuario As Long, ByVal id_patt As Long) As DataTable
+        Log.Record("Permisos.GetDataPermisoFamByUsuPatt", _idUsuarioActual, id_usuario, id_patt)
+        Return Adapter.GetDataPermisoFamByUsuPatt(id_usuario, id_patt)
+    End Function
     Public Sub Close()
         Adapter = Nothing
     End Sub
