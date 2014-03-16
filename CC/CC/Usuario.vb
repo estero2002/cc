@@ -25,7 +25,7 @@ Public Class FrmUsuario
             Grid.Columns("password").Visible = False
             Grid.Columns("id_lang").Visible = False
             Grid.Columns("strval").Visible = False
-            Grid.Columns("id_tel").Visible = False
+            'Grid.Columns("id_tel").Visible = False
             Grid.Columns("id_usuario").HeaderText = "Id Usuario"
             Grid.Columns("id_usuario").Width = 80
             Grid.Columns("id_usuario").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
@@ -74,10 +74,17 @@ Public Class FrmUsuario
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
         If Not Grid.CurrentRow Is Nothing Then
             If Utilities.YesNoDialog("Esta seguro que desea eliminar el registro?") = Windows.Forms.DialogResult.Yes Then
-                Dim _factory As New ConcreteUsuarioFactory(Context.idUsuarioActual)
-                Dim _usuario As Usuario = _factory.GetUsuario()
-                _usuario.Delete(Grid.CurrentRow.Cells("id_usuario").Value.ToString())
-                _usuario = Nothing
+                Dim _factoryp As New ConcretePermisosFactory(Context.idUsuarioActual)
+                Dim _permisos As Permisos = _factoryp.GetPermisos()
+                If (_permisos.ViolaPattVitales(Grid.CurrentRow.Cells("id_usuario").Value.ToString())) Then
+                    Utilities.ShowExclamationMessage("No se puede eliminar este usuario. Ningun otro usuario posee las patentes vitales.")
+                Else
+                    Dim _factory As New ConcreteUsuarioFactory(Context.idUsuarioActual)
+                    Dim _usuario As Usuario = _factory.GetUsuario()
+                    _usuario.Delete(Grid.CurrentRow.Cells("id_usuario").Value.ToString())
+                    _usuario = Nothing
+                End If
+                _permisos = Nothing
             End If
         Else
             Utilities.ShowExclamationMessage("No hay ninguna fila seleccionada en la grilla")

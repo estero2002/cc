@@ -56,6 +56,36 @@ Public Class Permisos
         Log.Record("Permisos.GetDataPermisoFamByUsuPatt", _idUsuarioActual, id_usuario, id_patt)
         Return Adapter.GetDataPermisoFamByUsuPatt(id_usuario, id_patt)
     End Function
+    Public Function ViolaPattVitales(ByVal id_usuario As Long) As Boolean
+        Log.Record("Permisos.ViolaPattVitales", _idUsuarioActual, id_usuario)
+        Dim dtIndividual As DataTable = Adapter.GetDataUsuPattVitalesIndividual(id_usuario)
+        If (dtIndividual.Rows.Count > 0) Then
+            Return False
+        End If
+
+        Dim dtFamilia As DataTable = Adapter.GetDataUsuPattVitalesPorFam(id_usuario)
+        If (dtFamilia.Rows.Count > 0) Then
+            Return False
+        End If
+
+        Return True
+    End Function
+    Public Function TienePattVitalesPorFam(ByVal id_usuario As Long) As Boolean
+        Log.Record("Permisos.TienePattVitalesPorFam", _idUsuarioActual, id_usuario)
+        Dim dtFam As DataTable = Adapter.GetDataTienePattVitalesPorFam(id_usuario)
+        If (dtFam.Rows.Count > 0) Then
+            Return True
+        End If
+        Return False
+    End Function
+    Public Function TienePattVitalesIndividual(ByVal id_usuario As Long) As Boolean
+        Log.Record("Permisos.TienePattVitalesIndividual", _idUsuarioActual, id_usuario)
+        Dim dtUsu As DataTable = Adapter.GetDataTienePattVitalesIndividual(id_usuario)
+        If (dtUsu.Rows.Count > 0) Then
+            Return True
+        End If
+        Return False
+    End Function
     Public Sub Close()
         Adapter = Nothing
     End Sub

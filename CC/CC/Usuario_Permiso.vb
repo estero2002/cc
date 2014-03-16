@@ -203,6 +203,25 @@ Public Class Usuario_Permiso
             Next
         End If
 
+        Dim asignadosRemovidos As String = AsignadosRemovidosToCsv()
+        If (asignadosRemovidos.Length > 0) Then
+            Dim toRemove() As String = asignadosRemovidos.Split(",")
+            For i As Integer = 0 To toRemove.Length - 1
+                Dim premovido As Long = Long.Parse(toRemove(i))
+                If ((premovido = 8) Or (premovido = 13) Or (premovido = 16) Or (premovido = 17)) Then
+                    Dim _factoryp As New ConcretePermisosFactory(Context.idUsuarioActual)
+                    Dim _permisos As Permisos = _factoryp.GetPermisos()
+                    If (_permisos.ViolaPattVitales(idUsuario)) Then
+                        If Not _permisos.TienePattVitalesPorFam(idUsuario) Then
+                            Dim dtPatt As DataTable = _permisos.GetDataByIdPatt(premovido)
+                            Utilities.ShowExclamationMessage("No se puede remover el permiso " + dtPatt.Rows(0)("Descripcion") + ". Ningun otro usuario posee las patentes vitales.")
+                            Return
+                        End If
+                    End If
+                End If
+            Next
+        End If
+
         _usuarioPermisos.UpdateSelected(idUsuario, AsignadosAgregadosToCsv(), AsignadosRemovidosToCsv())
         _usuarioPermisosNeg.UpdateSelected(idUsuario, DenegadosAgregadosToCsv(), DenegadosRemovidosToCsv())
         MessageBox.Show("El registro se actualizó exitosamente")

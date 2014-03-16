@@ -75,6 +75,23 @@ Public Class Usuario_Familia
                     End If
                 Next
             End If
+
+            Dim familiesToRemove As String = SelectControl1.csvRemovedItems
+            If (familiesToRemove.Length > 0) Then
+                Dim toRemove() As String = familiesToRemove.Split(",")
+                For i As Integer = 0 To toRemove.Length - 1
+                    Dim _factoryp As New ConcretePermisosFactory(Context.idUsuarioActual)
+                    Dim _permisos As Permisos = _factoryp.GetPermisos()
+                    If (_permisos.ViolaPattVitales(idUsuario)) Then
+                        If Not _permisos.TienePattVitalesIndividual(idUsuario) Then
+                            Dim dtFamilia As DataTable = _family.GetDataById(Long.Parse(toRemove(i)), False)
+                            Utilities.ShowExclamationMessage("No se puede remover la familia " + dtFamilia.Rows(0)("nombre").ToString() + ". Ningun otro usuario posee las patentes vitales.")
+                            Return
+                        End If
+                    End If
+                Next
+            End If
+
             _usuarioFamilias.UpdateSelected(idUsuario, SelectControl1.csvAddedItems, SelectControl1.csvRemovedItems)
             MessageBox.Show("El registro se actualizó exitosamente.")
             Me.Close()
