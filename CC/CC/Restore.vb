@@ -9,9 +9,14 @@ Public Class Restore
 
     Private Sub cmdExecute_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdExecute.Click
         If File.Exists(txtSourceFile.Text) Then
-            Dim databasePath As String = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ciber2.mdb")
-            _bck.restore(txtSourceFile.Text, databasePath)
-            Utilities.ShowInformationMessage("La restauración se realizó correctamente")
+            'Dim databasePath As String = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ciber2.mdb")
+            '_bck.restore(txtSourceFile.Text, databasePath)
+            Try
+                _bck.restoreSql(txtSourceFile.Text)
+                Utilities.ShowInformationMessage("La restauración se realizó correctamente")
+            Catch ex As Exception
+                Utilities.ShowInformationMessage("Error realizando la restauracion: " & ex.Message)
+            End Try
         Else
             Utilities.ShowExclamationMessage("El archivo a restaruar no existe")
         End If
@@ -21,7 +26,7 @@ Public Class Restore
         Dim fd As OpenFileDialog = New OpenFileDialog()
         fd.Title = "Seleccionar Archivo"
         fd.InitialDirectory = "C:\"
-        fd.Filter = "mdb files (*.mdb)|*.mdb"
+        fd.Filter = "BAK files (*.bak)|*.bak"
         fd.FilterIndex = 2
         fd.RestoreDirectory = True
         If fd.ShowDialog() = DialogResult.OK Then

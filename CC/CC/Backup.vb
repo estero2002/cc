@@ -16,8 +16,14 @@ Public Class Backup
             If Directory.Exists(Mid(txtTargetFile.Text, 1, txtTargetFile.Text.LastIndexOf("\"))) Then
                 filename = txtTargetFile.Text.Substring(txtTargetFile.Text.LastIndexOf("\") + 1)
                 If filename.IndexOfAny(bfc) = -1 Then
-                    _bck.backup(databasePath, txtTargetFile.Text)
-                    Utilities.ShowInformationMessage("El backup se realizó correctamente")
+                    '_bck.backup(databasePath, txtTargetFile.Text)
+                    Try
+                        _bck.backupSql(txtTargetFile.Text)
+                        Utilities.ShowInformationMessage("El backup se realizó correctamente")
+                    Catch ex As Exception
+                        Utilities.ShowInformationMessage("Error realizando el backup: " & ex.Message)
+                    End Try
+
                 Else
                     Utilities.ShowExclamationMessage("El nombre del archivo contiene caracteres incorrectos")
                 End If
@@ -33,7 +39,7 @@ Public Class Backup
         Dim result As DialogResult
         result = Me.FolderBrowserDialog1.ShowDialog()
         If result = DialogResult.OK Then
-            txtTargetFile.Text = FolderBrowserDialog1.SelectedPath + "\CCback-" + Date.Today.ToString("yyyy-MM-dd") + ".mdb"
+            txtTargetFile.Text = FolderBrowserDialog1.SelectedPath + "\CCback-" + Date.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".bak"
         End If
     End Sub
 
